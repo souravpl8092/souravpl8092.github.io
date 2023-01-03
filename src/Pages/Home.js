@@ -55,10 +55,10 @@ function Home() {
             a <span style={{ color: "#C8DA47" }} id="typer"></span>
           </Text>
           <Text fontSize={20}>From Jamshedpur, Jharkhand.</Text>
-          <Text fontSize={18}>
-            Passionate about implementing new ideas in reality.I'm working on my
-            skills and learning new technologies.Strong creative and analytical
-            skills. Team player with an eye for detail.{" "}
+          <Text fontSize={18} textAlign="justify">
+            Passionate about implementing new ideas in reality. I'm working on
+            my skills and learning new technologies. Strong creative and
+            analytical skills. Team player with an eye for detail.{" "}
           </Text>
           <br />
           <a href="./Sourav-Paul-Resume.pdf" download>
@@ -83,18 +83,15 @@ function Home() {
             </Flex>
           </a>
         </Box>
-        <Flex justifyContent={"center"} alignItems="center" maxW={400} m="auto">
-          <Image
-            src="https://i.imgur.com/6OjfgMC.png"
-            alt="Sourav Paul"
-            width={{
-              xs: "7em",
-              sm: "25em",
-              md: "40em",
-              lg: "65em",
-              xl: "75em",
-            }}
-          />
+        <Flex justifyContent={"center"} alignItems="center" wrap="wrap">
+          <Box w={380} h={380}>
+            <Image
+              src="https://i.imgur.com/6OjfgMC.png"
+              alt="Sourav Paul"
+              w={400}
+              h={380}
+            />
+          </Box>
         </Flex>
       </Grid>
       <Divider />

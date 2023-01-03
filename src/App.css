@@ -45,8 +45,7 @@
 }
 
 .active > button {
-  animation: changeBgd 15s infinite alternate linear;
-  color: white;
+  color: #beb8bb;
 }
 
 @keyframes changeBgd {

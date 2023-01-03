@@ -7,17 +7,11 @@ function Navbar() {
   return (
     <Flex
       gap={4}
-      px={{ base: 4, md: 10 }}
+      px={{ base: 4, md: 6 }}
       alignItems="center"
       className="navbar"
     >
-      <Link
-        activeClass="active"
-        to="home"
-        smooth={true}
-        offset={-80}
-        duration={500}
-      >
+      <Link to="home">
         <Img
           w="300px"
           cursor={"pointer"}
@@ -27,12 +21,22 @@ function Navbar() {
       </Link>
       <Spacer />
       <Flex
-        gap={{ base: 5, md: 5, lg: 10 }}
+        gap={{ base: 5, md: 3, lg: 8 }}
         wrap="wrap"
         justifyContent={"flex-end"}
-        display={{ base: "none", md: "inherit" }}
+        display={{ base: "none", lg: "inherit" }}
       >
-        <Flex gap={{ base: 5, md: 5, lg: 10 }}>
+        <Flex gap={{ base: 5, md: 2, lg: 8 }} p={4}>
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <button className="btn">Home</button>
+          </Link>
           <Link
             activeClass="active"
             to="about"
@@ -53,8 +57,6 @@ function Navbar() {
           >
             <button className="btn">Projects</button>
           </Link>
-        </Flex>
-        <Flex gap={{ base: 5, md: 5, lg: 10 }}>
           <Link
             activeClass="active"
             to="skills"

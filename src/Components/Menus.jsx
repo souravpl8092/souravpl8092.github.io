@@ -14,7 +14,7 @@ function Menus() {
   return (
     <Menu isOpen={isOpen}>
       <MenuButton
-        display={{ sm: "inherit", md: "none" }}
+        display={{ sm: "inherit", lg: "none" }}
         variant="ghost"
         borderRadius={5}
         aria-label="Courses"

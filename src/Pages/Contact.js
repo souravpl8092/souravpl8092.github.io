@@ -1,4 +1,12 @@
-import { Box, Container, Flex, Heading, Img, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Img,
+  Text,
+  Link,
+} from "@chakra-ui/react";
 import React from "react";
 
 function Contact() {
@@ -26,17 +34,17 @@ function Contact() {
         <Flex alignItems={"center"}>
           <Text fontSize={{ base: 16, md: 18, lg: 20 }} fontFamily="cursive">
             <span>Github : </span>{" "}
-            <a href="https://github.com/souravpl8092" target="blank">
+            <Link href="https://github.com/souravpl8092" target="blank">
               souravpl8092
-            </a>
+            </Link>
           </Text>
-          <a href="https://github.com/souravpl8092" target="blank">
+          <Link href="https://github.com/souravpl8092" target="blank">
             <Img
               width={5}
               ml="4"
               src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
             />
-          </a>
+          </Link>
         </Flex>
         <Flex alignItems={"center"}>
           <Text fontSize={{ base: 16, md: 18, lg: 20 }} fontFamily="cursive">
@@ -45,7 +53,7 @@ function Contact() {
               href="https://www.linkedin.com/in/sourav-paul-276ba323a/"
               target="blank"
             >
-              sourav-paul
+              sourav-paul-276ba323a
             </a>
           </Text>
           <a

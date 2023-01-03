@@ -84,7 +84,9 @@ function Project() {
                 >
                   {project.name}
                 </Heading>
-                <Text mt={4}>{project.desc}</Text>
+                <Text mt={4} textAlign="justify">
+                  {project.desc}
+                </Text>
               </Box>
               <Box>
                 <Text
@@ -125,3 +127,48 @@ function Project() {
 }
 
 export default Project;
+
+/* ,
+ {
+    "name": "Reliance Digital",
+    "desc": "Reliance Digital Retail Ltd. sells electronic products. The Company retails a wide variety of electronics including televisions, cameras, appliances, mobile phones, printers, and many more electronics. Reliance Digital retails electronics to customers throughout India.",
+    "img": "https://i.imgur.com/e2wQozr.png",
+    "git": "https://github.com/souravpl8092/Reliance-Digital",
+    "deploy": "https://steady-medovik-4174ca.netlify.app/",
+    "techStack": [
+      {
+        "name": "HTML",
+        "img": "https://cdn-icons-png.flaticon.com/512/1532/1532556.png"
+      },
+      {
+        "name": "CSS",
+        "img": "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"
+      },
+      {
+        "name": "JavaScript",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+      }
+    ]
+  },
+  ,
+  {
+    "name": "Movies App",
+    "desc": "Created movie app where user can get all movie details.",
+    "img": "https://i.imgur.com/a5hswe4.png",
+    "git": "https://github.com/souravpl8092/Movie-App",
+    "deploy": "https://subtle-piroshki-c228de.netlify.app/",
+    "techStack": [
+      {
+        "name": "HTML",
+        "img": "https://cdn-icons-png.flaticon.com/512/1532/1532556.png"
+      },
+      {
+        "name": "CSS",
+        "img": "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"
+      },
+      {
+        "name": "JavaScript",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+      }
+    ]
+  }*/
