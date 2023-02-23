@@ -1,5 +1,6 @@
-import { Box, Flex, Grid, Heading, Img, Text } from "@chakra-ui/react";
+import { Box, Grid, Heading, Img, Text } from "@chakra-ui/react";
 import React from "react";
+import { motion } from "framer-motion";
 let skills = [
   {
     name: "HTML",
@@ -19,7 +20,7 @@ let skills = [
   },
   {
     name: "NodeJs",
-    img: "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png",
+    img: "https://nodejs.org/static/images/logo.svg",
   },
   {
     name: "MongoDB",
@@ -27,7 +28,7 @@ let skills = [
   },
   {
     name: "Express",
-    img: "https://miro.medium.com/max/1200/0*iechRr4efJARJmnK.jpg",
+    img: "https://i.imgur.com/jonx38t.png",
   },
   {
     name: "REST API",
@@ -39,7 +40,7 @@ let skills = [
   },
   {
     name: "TypeScript",
-    img: "https://cdn.worldvectorlogo.com/logos/typescript.svg",
+    img: "https://i.imgur.com/T2ZnBHn.png",
   },
   {
     name: "Redux",
@@ -47,18 +48,18 @@ let skills = [
   },
   {
     name: "Redux Thunk",
-    img: "https://miro.medium.com/max/1400/1*5FcvZufrMDzs1ef63NjhXw.jpeg",
+    img: "https://i.imgur.com/U9wVSoJ.png",
   },
 ];
 
 let Tools = [
   {
     name: "Git",
-    img: "https://cdn.iconscout.com/icon/free/png-512/git-226092.png",
+    img: "https://raveenakale475.github.io/static/media/git.95e92c065c8ce5f9147a.png",
   },
   {
     name: "Github",
-    img: "https://cdn.iconscout.com/icon/free/png-512/github-153-675523.png",
+    img: "https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png",
   },
   {
     name: "Storybook",
@@ -66,7 +67,7 @@ let Tools = [
   },
   {
     name: "Netlify",
-    img: "https://www.netlify.com/v3/img/components/logomark-dark.png",
+    img: "https://raveenakale475.github.io/static/media/netlify.ff9a6cf8b6be147ca675.png",
   },
   {
     name: "Chakra UI",
@@ -77,78 +78,158 @@ let Tools = [
     img: "https://testing-library.com/img/octopus-128x128.png",
   },
   {
-    name: "Cypress",
-    img: "https://www.opencodez.com/wp-content/uploads/2019/12/cypress-logo.png",
+    name: "Vercel",
+    img: "https://raveenakale475.github.io/static/media/veercel.6d176e7fc85917a641d0.ico",
   },
   {
     name: "NPM",
     img: "https://cdn.worldvectorlogo.com/logos/npm-square-red-1.svg",
   },
+  {
+    name: "Postman",
+    img: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png",
+  },
+  {
+    name: "Thunder Client",
+    img: "https://ph-files.imgix.net/3f458a19-f754-4e09-8aa5-351c3a45dc38.png?auto=format",
+  },
+  {
+    name: "VS Code",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png",
+  },
+  {
+    name: "Cyclic",
+    img: "https://www.cyclic.sh/images/cyclic-logo.png",
+  },
 ];
+
 function Skills() {
+  const slideUp = {
+    hidden: { opacity: 0, y: 100 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+        when: "beforeChildren",
+        staggerChildren: 0.5,
+      },
+    },
+  };
+
   return (
-    <Box my="100" id="skills">
-      <Heading textAlign={"center"} style={{ color: "#C8DA47" }}>
-        My Skills
-      </Heading>
-      <Grid
-        templateColumns={{
-          base: "repeat(2,1fr)",
-          md: "repeat(3,1fr)",
-          lg: "repeat(4,1fr)",
-        }}
-        gap={20}
-        w={"80%"}
-        m="100px auto"
-      >
-        {skills.map((skill, index) => {
-          return (
-            <Box key={index} className="skill" p={3} textAlign="center">
-              <Flex
-                direction={{ base: "column", xl: "row" }}
-                alignItems={"center"}
-                gap={4}
-              >
-                <Img src={skill.img} w={100} h={100} />
-                <Text fontSize={20} fontWeight={500}>
-                  {skill.name}
-                </Text>
-              </Flex>
-            </Box>
-          );
-        })}
-      </Grid>
-      <br />
-      <Heading textAlign={"center"} style={{ color: "#C8DA47" }}>
-        Tools
-      </Heading>
-      <Grid
-        templateColumns={{
-          base: "repeat(2,1fr)",
-          md: "repeat(3,1fr)",
-          lg: "repeat(4,1fr)",
-        }}
-        gap={20}
-        w={"80%"}
-        m="100px auto"
-      >
-        {Tools.map((skill, index) => {
-          return (
-            <Box key={index} className="skill" p={3} textAlign="center">
-              <Flex
-                direction={{ base: "column", xl: "row" }}
-                alignItems={"center"}
-                gap={4}
-              >
-                <Img src={skill.img} w={100} h={100} />
-                <Text fontSize={20} fontWeight={500}>
-                  {skill.name}
-                </Text>
-              </Flex>
-            </Box>
-          );
-        })}
-      </Grid>
+    <Box>
+      <Box mb="10">
+        <Box mt={100}>
+          <Heading textAlign={"center"}>My Skills</Heading>
+          <br />
+          <Grid
+            templateColumns={{
+              base: "repeat(1,1fr)",
+              sm: "repeat(2,1fr)",
+              md: "repeat(3,1fr)",
+              lg: "repeat(4,1fr)",
+            }}
+            gap={20}
+            w={"80%"}
+            m="100px auto"
+          >
+            {skills.map((skill, index) => {
+              return (
+                <Box
+                  key={index}
+                  className="skill"
+                  p={2}
+                  textAlign="center"
+                  border="2px solid white"
+                  bg="blackAlpha.600"
+                  color="whiteAlpha.900"
+                  as={motion.div}
+                  variants={slideUp}
+                  initial="hidden"
+                  whileInView="visible"
+                  whileHover={{ scale: 1.2 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                  <Box
+                    direction={{ base: "column", xl: "row" }}
+                    alignItems={"center"}
+                    m="auto"
+                    textAlign="center"
+                    gap={4}
+                    bgGradient={[
+                      "linear(to-tr, gray.700, gray.200)",
+                      "linear(to-b, gray.600, gray.900)",
+                    ]}
+                    boxShadow="dark-lg"
+                    color="whiteAlpha.900"
+                    borderRadius="20px"
+                  >
+                    <Img src={skill.img} w={70} h={70} m="auto" />
+                    <Text fontSize={21} fontWeight={500}>
+                      {skill.name}
+                    </Text>
+                  </Box>
+                </Box>
+              );
+            })}
+          </Grid>
+          <br />
+          <Heading textAlign={"center"}>Tools</Heading>
+          <Grid
+            templateColumns={{
+              base: "repeat(1,1fr)",
+              sm: "repeat(2,1fr)",
+              md: "repeat(3,1fr)",
+              lg: "repeat(4,1fr)",
+            }}
+            gap={20}
+            w={"80%"}
+            m="100px auto"
+          >
+            {Tools.map((tools, index) => {
+              return (
+                <Box
+                  key={index}
+                  className="skill"
+                  p={2}
+                  textAlign="center"
+                  border="2px solid white"
+                  bg="blackAlpha.600"
+                  color="whiteAlpha.900"
+                  as={motion.div}
+                  variants={slideUp}
+                  initial="hidden"
+                  whileInView="visible"
+                  whileHover={{ scale: 1.2 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                  <Box
+                    direction={{ base: "column", xl: "row" }}
+                    alignItems={"center"}
+                    m="auto"
+                    textAlign="center"
+                    gap={4}
+                    bgGradient={[
+                      "linear(to-tr, gray.700, gray.200)",
+                      "linear(to-b, gray.600, gray.900)",
+                    ]}
+                    boxShadow="dark-lg"
+                    color="whiteAlpha.900"
+                    borderRadius="20px"
+                  >
+                    <Img src={tools.img} w={70} h={70} m="auto" />
+                    <Text fontSize={21} fontWeight={500}>
+                      {tools.name}
+                    </Text>
+                  </Box>
+                </Box>
+              );
+            })}
+          </Grid>
+        </Box>
+      </Box>
     </Box>
   );
 }

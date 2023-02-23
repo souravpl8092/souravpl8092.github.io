@@ -1,20 +1,51 @@
 import { Box, Flex, Grid, Heading, Img } from "@chakra-ui/react";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
+import { motion } from "framer-motion";
 
 function Github() {
+  const slideUp = {
+    hidden: { opacity: 0, y: 100 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+        when: "beforeChildren",
+        staggerChildren: 0.5,
+      },
+    },
+  };
   return (
-    <Box>
-      <Heading textAlign={"center"} mt={40} style={{ color: "#C8DA47" }}>
+    <Box
+      as={motion.div}
+      variants={slideUp}
+      initial="hidden"
+      whileInView="visible"
+      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+    >
+      <Heading textAlign={"center"} mt={40}>
         Git Statistics
       </Heading>
       <br />
       <br />
-      <Grid w={"80%"} m="40px auto" justifyContent={"center"}>
+      <Grid
+        w={"80%"}
+        m="40px auto"
+        justifyContent={"center"}
+        as={motion.div}
+        variants={slideUp}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ type: "spring", stiffness: 400, damping: 10 }}
+      >
         <Img
           className="git"
-          src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=souravpl8092&theme=solarized_dark"
+          src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=souravpl8092&&theme=radical"
+          
         />
+        <br />
 
         <GitHubCalendar
           username="souravpl8092"
@@ -22,7 +53,16 @@ function Github() {
           blockMargin={5}
           color={"#20FF32"}
         />
-        <Flex wrap="wrap">
+        <br />
+        <Flex
+          wrap="wrap"
+          mb="2"
+          as={motion.div}
+          variants={slideUp}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        >
           <Img
             className="git"
             src="https://github-readme-stats.vercel.app/api?username=souravpl8092&show_icons=true&theme=radical"
@@ -30,16 +70,42 @@ function Github() {
           <Img
             className="git"
             src="https://github-readme-streak-stats.herokuapp.com/?user=souravpl8092&theme=radical"
+            alt="souravpl8092"
           />
         </Flex>
-        <Img
-          className="git"
-          src="https://github-profile-trophy.vercel.app/?username=souravpl8092&theme=radical"
-        />
-        <Img
-          className="git"
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=souravpl8092&layout=compact&theme=radical"
-        />
+        <Box
+          as={motion.div}
+          variants={slideUp}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        ></Box>
+        <Box
+          as={motion.div}
+          variants={slideUp}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        >
+          <Img
+            className="git"
+            src="https://github-profile-trophy.vercel.app/?username=souravpl8092&theme=radical"
+            alt="souravpl8092"
+            mb="2"
+          />
+        </Box>
+        <Box
+          as={motion.div}
+          variants={slideUp}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        >
+          <Img
+            className="git"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=souravpl8092&layout=compact&theme=radical"
+          />
+        </Box>
       </Grid>
     </Box>
   );

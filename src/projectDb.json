@@ -1,10 +1,47 @@
 [
   {
+    "name": "Lenskart",
+    "desc": "Lenskart is an Indian e-commerce company that sells eyeglasses, contact lenses, and sunglasses. The Company has a wide variety of products and offers services such as free home trial and virtual try-on. The company is also known for its lenskart.com eye check-up camps. The company has also has physical stores across India. ",
+    "img": "https://i.imgur.com/VDrrAJD.png",
+    "git": "https://github.com/souravpl8092/Lenskart_Clone",
+    "deploy": "https://masai-glasscart.netlify.app/",
+    "techStack": [
+      {
+        "name": "React",
+        "img": "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
+      },
+      {
+        "name": "CSS",
+        "img": "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"
+      },
+      {
+        "name": "JavaScript",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+      },
+      {
+        "name": "Chakra UI",
+        "img": "https://camo.githubusercontent.com/eec63163a5209f78e8b0e3d6ab82eb981d03c4453a7a466f4fdc063da09f2a4d/68747470733a2f2f692e696d6775722e636f6d2f454d796b5a62332e706e67"
+      },
+      {
+        "name": "Node.js",
+        "img": "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"
+      },
+      {
+        "name": "Express.js",
+        "img": "https://miro.medium.com/max/1200/0*iechRr4efJARJmnK.jpg"
+      },
+      {
+        "name": "Mongodb",
+        "img": "https://cdn.iconscout.com/icon/free/png-512/mongodb-5-1175140.png"
+      }
+    ]
+  },
+  {
     "name": "Reliance Digital",
     "desc": "Reliance Digital Retail Ltd. sells electronic products. The Company retails a wide variety of electronics including televisions, cameras, appliances, mobile phones, printers, and many more electronics. Reliance Digital retails electronics to customers throughout India.",
     "img": "https://i.imgur.com/pTBRE0s.png",
-    "git": "https://github.com/RajParmar03/Reliance_digital_clone/tree/main/reliance_digital/src",
-    "deploy": "https://delightful-twilight-10e5bd.netlify.app/",
+    "git": "https://github.com/RajParmar03/Reliance_digital_clone",
+    "deploy": "https://reliancedigitalrrk.netlify.app/",
     "techStack": [
       {
         "name": "React",
@@ -32,7 +69,7 @@
     "name": "Nordstrom",
     "desc": "Nordstrom is a US based E-commerce company, it  is a leading fashion retailer offering compelling clothing, shoes and accessories for men, women and kids. Nordstrom is a one-stop shop for the whole family, and a fashion source for the modern world.",
     "img": "https://i.imgur.com/DPaig3L.png",
-    "git": "https://github.com/souravpl8092/Nordstorm/tree/main/Nordstrom-App",
+    "git": "https://github.com/souravpl8092/Nordstorm",
     "deploy": "https://jade-mandazi-3a9ec9.netlify.app/",
     "techStack": [
       {
@@ -57,58 +94,17 @@
       }
     ]
   },
-  {
-    "name": "Toggl Track",
-    "desc": "Toggl Track is a time tracking app that allows you to track your daily activities across different platforms; providing you with detailed insights and an opportunity to optimize your workflow by identifying areas where you can improve.",
-    "img": "https://i.imgur.com/wax8PgG.png",
-    "git": "https://github.com/YashSharma7746/Project",
-    "deploy": "https://ubiquitous-figolla-cbd3f0.netlify.app/",
-    "techStack": [
-      {
-        "name": "HTML",
-        "img": "https://cdn-icons-png.flaticon.com/512/1532/1532556.png"
-      },
-      {
-        "name": "CSS",
-        "img": "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"
-      },
-      {
-        "name": "JavaScript",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-      }
-    ]
-  },
+
   {
     "name": "Plum Goodness",
     "desc": "Plum is a fresh line of 100% vegan beauty products that’s all about “being good” - to your skin, to your senses, to others, and to the environment. Plums are formulated with love to protect, repair, nourish - and delight, using some of the richest sources of natural nutrients, in sync with “good science”.",
     "img": "https://i.imgur.com/DsGXj1h.png",
-    "git": "https://github.com/souravpl8092/Plum/tree/main/plumgoodness.com",
+    "git": "https://github.com/souravpl8092/Plum",
     "deploy": "https://mellifluous-crepe-f9498b.netlify.app/",
     "techStack": [
       {
         "name": "HTML",
         "img": "https://cdn-icons-png.flaticon.com/512/1532/1532556.png"
-      },
-      {
-        "name": "CSS",
-        "img": "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"
-      },
-      {
-        "name": "JavaScript",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-      }
-    ]
-  },
-  {
-    "name": "Todo App",
-    "desc": "ToDo List App is a kind of app that generally used to maintain our day-to-day tasks or list everything that we have to do, with the most important tasks at the top of the list, and the least important tasks at the bottom. It is helpful in planning our daily schedules. We can add more tasks at any time and delete a task that is completed. ",
-    "img": "https://i.imgur.com/m2CwgJk.png",
-    "git": "https://github.com/souravpl8092/Todo-App",
-    "deploy": "https://beautiful-tulumba-324758.netlify.app/",
-    "techStack": [
-      {
-        "name": "React",
-        "img": "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
       },
       {
         "name": "CSS",

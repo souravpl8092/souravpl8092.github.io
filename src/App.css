@@ -7,29 +7,13 @@
 .App,
 .button,
 .navbar {
-  /* background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%); */
   color: white;
   background: #435668;
-
-  /* animation: changeBg 15s infinite alternate linear; */
-}
-
-@keyframes changeBg {
-  0% {
-    background: #8c28e9;
-  }
-  25% {
-    background: rgba(31, 31, 51, 1);
-  }
-  50% {
-    background: rgba(31, 31, 51, 1);
-  }
-  75% {
-    background: rgba(31, 31, 51, 1);
-  }
-  100% {
-    background: #8c28e9;
-  }
+/*   background: linear-gradient(
+    rgb(64, 64, 106) 16%,
+    rgb(45, 45, 77) 24%,
+    rgba(31, 31, 51, 1) 60%
+  ); */
 }
 
 .navbar {
@@ -45,32 +29,13 @@
 }
 
 .active > button {
-  color: #beb8bb;
-}
-
-@keyframes changeBgd {
-  0% {
-    background: rgb(17, 232, 248);
-  }
-  25% {
-    background: #8c28e9;
-  }
-  50% {
-    background: #8c28e9;
-  }
-  75% {
-    background: #8c28e9;
-  }
-  100% {
-    background: rgb(17, 232, 248);
-  }
+  color: white;
 }
 
 .btn {
   width: 70px;
   height: 60px;
   font-size: 19px;
-  /* background: rgb(243, 14, 79); */
   transition: width 2s, height 2s;
   border-radius: 5px;
   color: rgb(193, 187, 190);
@@ -101,18 +66,6 @@
   animation: bc 15s infinite alternate linear;
 }
 
-@keyframes bc {
-  25% {
-    box-shadow: 5px 5px 10px #202647, -5px -5px 10px #101f5d;
-  }
-  50% {
-    box-shadow: 5px 5px 10px #202647, -5px -5px 10px #101f5d;
-  }
-  75% {
-    box-shadow: 5px 5px 10px #202647, -5px -5px 10px #101f5d;
-  }
-}
-
 .button {
   box-shadow: 10px 10px 19px #0e0e12, -10px -10px 19px rgb(22, 22, 35);
   background-color: rgba(31, 31, 51, 1);
@@ -128,7 +81,6 @@
 
 a {
   text-decoration: none !important;
-
   color: white;
 }
 
@@ -137,35 +89,12 @@ a {
   margin: 0 auto;
 }
 
-.skill {
-  border-radius: 22px;
-
+.skill,
+.tools {
+  border-radius: 25px;
   animation: changeSd 15s infinite alternate linear;
 }
 
-@keyframes changeSd {
-  0% {
-    background: #8c28e9;
-    box-shadow: 15px 15px 0px #54188c, -15px -15px 0px #c438ff;
-  }
-  25% {
-    background: rgba(31, 31, 51, 1);
-    box-shadow: 15px 15px 0px #13131e, -15px -15px 0px #2d2d46;
-  }
-  50% {
-    background: rgba(31, 31, 51, 1);
-    box-shadow: 15px 15px 0px #13131e, -15px -15px 0px #2d2d46;
-  }
-  75% {
-    background: rgba(31, 31, 51, 1);
-    box-shadow: 15px 15px 0px #13131e, -15px -15px 0px #2d2d46;
-  }
-  100% {
-    background: #8c28e9;
-    box-shadow: 15px 15px 0px #54188c, -15px -15px 0px #c438ff;
-  }
-}
-
 #contact span {
-  color: yellow;
+  color: white;
 }

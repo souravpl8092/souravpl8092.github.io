@@ -11,6 +11,12 @@ import React from "react";
 import { Link } from "react-scroll";
 function Menus() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const handleClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1BtlCp0aiUlaiP5yReW94bd1zuMLCXAFW/view?usp=sharing",
+      "_blank"
+    );
+  };
   return (
     <Menu isOpen={isOpen}>
       <MenuButton
@@ -40,6 +46,29 @@ function Menus() {
         <Box textAlign={"left"}>
           <Link
             activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <Text
+              p={2}
+              fontWeight={600}
+              fontSize="xl"
+              _hover={{
+                borderRadius: "5px",
+                bg: "gray.100",
+                color: "red",
+                cursor: "pointer",
+              }}
+              mx={3}
+            >
+              Home
+            </Text>
+          </Link>
+          <Link
+            activeClass="active"
             to="about"
             spy={true}
             smooth={true}
@@ -49,6 +78,7 @@ function Menus() {
             <Text
               p={2}
               fontWeight={600}
+              fontSize="xl"
               _hover={{
                 borderRadius: "5px",
                 bg: "gray.100",
@@ -60,28 +90,7 @@ function Menus() {
               About
             </Text>
           </Link>
-          <Link
-            activeClass="active"
-            to="skills"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            <Text
-              p={2}
-              fontWeight={600}
-              _hover={{
-                borderRadius: "5px",
-                bg: "gray.100",
-                color: "red",
-                cursor: "pointer",
-              }}
-              mx={3}
-            >
-              Skills
-            </Text>
-          </Link>
+          
           <Link
             activeClass="active"
             to="projects"
@@ -93,6 +102,7 @@ function Menus() {
             <Text
               p={2}
               fontWeight={600}
+              fontSize="xl"
               _hover={{
                 borderRadius: "5px",
                 bg: "gray.100",
@@ -104,13 +114,35 @@ function Menus() {
               Projects
             </Text>
           </Link>
-          <a
-            target={"blank"}
-            href="https://drive.google.com/file/d/1BtlCp0aiUlaiP5yReW94bd1zuMLCXAFW/view?usp=sharing"
+          <Link
+            activeClass="active"
+            to="skill"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
           >
             <Text
               p={2}
               fontWeight={600}
+              fontSize="xl"
+              _hover={{
+                borderRadius: "5px",
+                bg: "gray.100",
+                color: "red",
+                cursor: "pointer",
+              }}
+              mx={3}
+            >
+              Skills
+            </Text>
+          </Link>
+          <a href="./fw20_0372-Sourav-Paul-Resume.pdf" download>
+            <Text
+              onClick={handleClick}
+              p={2}
+              fontWeight={600}
+              fontSize="xl"
               _hover={{
                 borderRadius: "5px",
                 bg: "gray.100",
@@ -133,6 +165,7 @@ function Menus() {
             <Text
               p={2}
               fontWeight={600}
+              fontSize="xl"
               _hover={{
                 borderRadius: "5px",
                 bg: "gray.100",
