@@ -9,10 +9,11 @@
 .navbar {
   color: white;
   background: #435668;
-/*   background: linear-gradient(
-    rgb(64, 64, 106) 16%,
-    rgb(45, 45, 77) 24%,
-    rgba(31, 31, 51, 1) 60%
+  background: #151617;
+  /* background: linear-gradient(
+    rgb(0, 78, 109) 16%,
+    rgb(3, 90, 125) 24%,
+    rgb(17, 17, 29) 60%
   ); */
 }
 

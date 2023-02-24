@@ -40,14 +40,22 @@ function Profile() {
     },
   };
   return (
-    <Box id="profile">
+    <Box
+      id="profile"
+      backgroundPosition="center"
+      bg="blackAlpha.900"
+      backgroundRepeat="repeat"
+      bgImage="https://i.imgur.com/Y3CLzxy.jpeg"
+      bgSize="100%"
+      pb="5"
+    >
       <Grid
         w={{ base: "100%", md: "80%", lg: "80%" }}
         templateColumns={{ md: "1fr", lg: "1fr 1fr" }}
         m="85px auto 300px"
         pt={100}
         opacity={0.9}
-        marginBottom="12%"
+        marginBottom="6%"
         as={motion.div}
         variants={slideUp}
         initial="hidden"
