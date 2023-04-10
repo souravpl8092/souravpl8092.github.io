@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Container,
   Flex,
@@ -14,13 +15,79 @@ import {
   InputGroup,
   InputLeftElement,
   Textarea,
+  useToast,
 } from "@chakra-ui/react";
+
 import { MdPhone, MdEmail, MdOutlineEmail } from "react-icons/md";
 import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
 import React from "react";
 import { motion } from "framer-motion";
 
 function Contact() {
+  const toast = useToast();
+  const [loading, setLoading] = useState("");
+  const [name, setName] = useState("");
+  const [mail, setMail] = useState("");
+  const [message, setMessage] = useState("");
+  const [postAt, setPostAt] = useState("");
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = (today.getMonth() + 1).toString().padStart(2, "0");
+  const day = today.getDate().toString().padStart(2, "0");
+  const currentDate = `${day}-${month}-${year}`;
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      setLoading(true);
+      setPostAt(currentDate);
+      if (name !== "" && mail !== "" && message !== "") {
+        const payload = {
+          name,
+          mail,
+          message,
+          postAt,
+        };
+
+        const response = await fetch(
+          "https://fair-red-anemone-yoke.cyclic.app/user",
+          {
+            method: "POST",
+            body: JSON.stringify(payload),
+            headers: { "Content-Type": "application/json" },
+          }
+        );
+
+        if (response.status === 201) {
+          setLoading(false);
+          toast({
+            title: "Thank You",
+            description: "The form was submitted successfully.",
+            status: "success",
+            duration: 3000,
+            isClosable: true,
+          });
+          setName("");
+          setMail("");
+          setMessage("");
+        } else {
+          setLoading(false);
+        }
+      } else {
+        setLoading(false);
+        toast({
+          title: "Please fill all mandatory field",
+          status: "warning",
+          duration: 2000,
+          isClosable: true,
+        });
+      }
+    } catch (error) {
+      setLoading(false);
+      console.log("An error occurred. Please try again later.");
+    }
+  };
+
   const slideUp = {
     hidden: { opacity: 0, y: 100 },
     visible: {
@@ -49,10 +116,7 @@ function Contact() {
       >
         <Flex>
           <Box
-            bgGradient={[
-              "linear(to-tr, gray.700, gray.200)",
-              "linear(to-b, gray.600, gray.900)",
-            ]}
+            bgGradient={["linear(to-b, gray.600, gray.900)"]}
             boxShadow="dark-lg"
             color="white"
             borderRadius="2xl"
@@ -144,7 +208,11 @@ function Contact() {
                     <Box m={10} color="#0B0E3F">
                       <VStack spacing={5}>
                         <FormControl id="name">
-                          <FormLabel>Your Name</FormLabel>
+                          <FormLabel>
+                            <Flex>
+                              Your Name <Text color="red"> *</Text>
+                            </Flex>
+                          </FormLabel>
                           <InputGroup borderColor="#E0E1E7">
                             <InputLeftElement
                               pointerEvents="none"
@@ -153,12 +221,18 @@ function Contact() {
                             <Input
                               type="text"
                               size="md"
+                              onChange={(e) => setName(e.target.value)}
+                              value={name}
                               placeholder="Enter Your Name Please"
                             />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
-                          <FormLabel>Mail</FormLabel>
+                          <FormLabel>
+                            <Flex>
+                              Mail <Text color="red"> *</Text>
+                            </Flex>
+                          </FormLabel>
                           <InputGroup borderColor="#E0E1E7">
                             <InputLeftElement
                               pointerEvents="none"
@@ -167,34 +241,65 @@ function Contact() {
                             <Input
                               type="text"
                               size="md"
+                              onChange={(e) => setMail(e.target.value)}
+                              value={mail}
                               placeholder="Enter Your E-mail Please "
                             />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
-                          <FormLabel>Message</FormLabel>
+                          <FormLabel>
+                            <Flex>
+                              Message<Text color="red"> *</Text>
+                            </Flex>
+                          </FormLabel>
                           <Textarea
                             borderColor="gray.300"
                             _hover={{
                               borderRadius: "gray.300",
                             }}
+                            onChange={(e) => setMessage(e.target.value)}
+                            value={message}
                             placeholder="Enter Your Message"
                           />
                         </FormControl>
-                        <FormControl id="name" float="right">
+                        {loading ? (
                           <Button
-                            variant="solid"
+                            isLoading
+                            loadingText="Submitting"
                             bg="linear-gradient(to right bottom, #293dbc, #0a1a54)"
                             color="white"
-                            _hover={{
-                              bg: "#0a1a54",
-                              fontWeight: "bold",
-                              fontSize: "14px",
-                            }}
+                            fontSize="lg"
+                            px="8"
+                            py="6"
+                            w="100%"
+                            borderRadius="lg"
+                            variant="solid"
                           >
-                            Let's talk
+                            Submit
                           </Button>
-                        </FormControl>
+                        ) : (
+                          <FormControl id="name" float="right">
+                            <Button
+                              variant="solid"
+                              bg="linear-gradient(to right bottom, #293dbc, #0a1a54)"
+                              color="white"
+                              _hover={{
+                                bg: "#0a1a54",
+                                fontWeight: "bold",
+                                fontSize: "14px",
+                              }}
+                              px="8"
+                              py="6"
+                              w="100%"
+                              borderRadius="lg"
+                              fontSize="lg"
+                              onClick={handleSubmit}
+                            >
+                              Let's talk
+                            </Button>
+                          </FormControl>
+                        )}
                       </VStack>
                     </Box>
                   </Box>

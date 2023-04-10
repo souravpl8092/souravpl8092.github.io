@@ -2,95 +2,111 @@
   {
     "name": "Lenskart",
     "desc": "Lenskart is an Indian e-commerce company that sells eyeglasses, contact lenses, and sunglasses. The Company has a wide variety of products and offers services such as free home trial and virtual try-on. The company is also known for its lenskart.com eye check-up camps. The company has also has physical stores across India. ",
-    "img": "https://i.imgur.com/VDrrAJD.png",
+    "img": "./Lenskart.png",
     "git": "https://github.com/souravpl8092/Lenskart_Clone",
-    "deploy": "https://masai-glasscart.netlify.app/",
+    "deploy": "https://glassscart.vercel.app/",
     "techStack": [
       {
         "name": "React",
-        "img": "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
+        "img": "./react.png"
       },
       {
         "name": "CSS",
-        "img": "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"
+        "img": "./CSS.png"
       },
       {
         "name": "JavaScript",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+        "img": "./JS.png"
+      },
+      {
+        "name": "Redux",
+        "img": "./redux.png"
+      },
+      {
+        "name": "Redux-Thunk",
+        "img": "./Thunk.jpg"
       },
       {
         "name": "Chakra UI",
-        "img": "https://camo.githubusercontent.com/eec63163a5209f78e8b0e3d6ab82eb981d03c4453a7a466f4fdc063da09f2a4d/68747470733a2f2f692e696d6775722e636f6d2f454d796b5a62332e706e67"
+        "img": "./Chakra-UI.png"
       },
       {
         "name": "Node.js",
-        "img": "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"
+        "img": "./node.png"
       },
       {
         "name": "Express.js",
-        "img": "https://miro.medium.com/max/1200/0*iechRr4efJARJmnK.jpg"
+        "img": "./express.png"
       },
       {
         "name": "Mongodb",
-        "img": "https://cdn.iconscout.com/icon/free/png-512/mongodb-5-1175140.png"
+        "img": "./mongo.webp"
       }
     ]
   },
   {
     "name": "Reliance Digital",
     "desc": "Reliance Digital Retail Ltd. sells electronic products. The Company retails a wide variety of electronics including televisions, cameras, appliances, mobile phones, printers, and many more electronics. Reliance Digital retails electronics to customers throughout India.",
-    "img": "https://i.imgur.com/pTBRE0s.png",
+    "img": "./Reliance.png",
     "git": "https://github.com/RajParmar03/Reliance_digital_clone",
     "deploy": "https://reliancedigitalrrk.netlify.app/",
     "techStack": [
       {
         "name": "React",
-        "img": "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
+        "img": "./react.png"
       },
       {
         "name": "JavaScript",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+        "img": "./JS.png"
+      },
+      {
+        "name": "CSS",
+        "img": "./CSS.png"
       },
       {
         "name": "Redux",
-        "img": "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
+        "img": "./redux.png"
       },
       {
         "name": "Redux-Thunk",
-        "img": "https://miro.medium.com/max/1400/1*5FcvZufrMDzs1ef63NjhXw.jpeg"
+        "img": "./Thunk.jpg"
       },
       {
         "name": "Chakra UI",
-        "img": "https://camo.githubusercontent.com/eec63163a5209f78e8b0e3d6ab82eb981d03c4453a7a466f4fdc063da09f2a4d/68747470733a2f2f692e696d6775722e636f6d2f454d796b5a62332e706e67"
+        "img": "./Chakra-UI.png"
       }
     ]
   },
   {
     "name": "Nordstrom",
     "desc": "Nordstrom is a US based E-commerce company, it  is a leading fashion retailer offering compelling clothing, shoes and accessories for men, women and kids. Nordstrom is a one-stop shop for the whole family, and a fashion source for the modern world.",
-    "img": "https://i.imgur.com/DPaig3L.png",
+    "img": "./Nordstrome.png",
     "git": "https://github.com/souravpl8092/Nordstorm",
     "deploy": "https://jade-mandazi-3a9ec9.netlify.app/",
     "techStack": [
       {
         "name": "React",
-        "img": "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
+        "img": "./react.png"
       },
       {
         "name": "NodeJs",
-        "img": "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"
+        "img": "./node.png"
       },
       {
         "name": "JavaScript",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+        "img": "./JS.png"
+      },
+      {
+        "name": "CSS",
+        "img": "./CSS.png"
       },
       {
         "name": "Chakra UI",
-        "img": "https://camo.githubusercontent.com/eec63163a5209f78e8b0e3d6ab82eb981d03c4453a7a466f4fdc063da09f2a4d/68747470733a2f2f692e696d6775722e636f6d2f454d796b5a62332e706e67"
+        "img": "./Chakra-UI.png"
       },
       {
         "name": "Heroku",
-        "img": "https://cledara-public.s3.eu-west-2.amazonaws.com/heroku.png"
+        "img": "./heroku.png"
       }
     ]
   },
@@ -98,21 +114,21 @@
   {
     "name": "Plum Goodness",
     "desc": "Plum is a fresh line of 100% vegan beauty products that’s all about “being good” - to your skin, to your senses, to others, and to the environment. Plums are formulated with love to protect, repair, nourish - and delight, using some of the richest sources of natural nutrients, in sync with “good science”.",
-    "img": "https://i.imgur.com/DsGXj1h.png",
+    "img": "./Plum.png",
     "git": "https://github.com/souravpl8092/Plum",
     "deploy": "https://mellifluous-crepe-f9498b.netlify.app/",
     "techStack": [
       {
         "name": "HTML",
-        "img": "https://cdn-icons-png.flaticon.com/512/1532/1532556.png"
+        "img": "./HTML.png"
       },
       {
         "name": "CSS",
-        "img": "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"
+        "img": "./CSS.png"
       },
       {
         "name": "JavaScript",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+        "img": "./JS.png"
       }
     ]
   }

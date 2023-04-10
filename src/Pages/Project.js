@@ -45,10 +45,7 @@ function Project() {
             p="5"
             m="80px auto"
             fontWeight="semibold"
-            bgGradient={[
-              "linear(to-tr, gray.700, gray.200)",
-              "linear(to-b, gray.600, gray.900)",
-            ]}
+            bgGradient={["linear(to-b, gray.600, gray.900)"]}
             boxShadow="dark-lg"
             color="whiteAlpha.900"
             /* background="#1f1f33" */
@@ -87,11 +84,7 @@ function Project() {
                         fontSize: "14px",
                       }}
                     >
-                      <Img
-                        src="https://www.svgrepo.com/show/332084/github.svg"
-                        w={7}
-                        mr={2}
-                      />
+                      <Img src="./GitHub.png" w={6} mr={2} />
                       Github
                     </Button>
                   </Link>

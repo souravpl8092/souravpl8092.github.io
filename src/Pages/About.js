@@ -27,10 +27,7 @@ function About() {
         m="40px auto 0"
         lineHeight={{ base: "7", md: "10" }}
         bg="blackAlpha.500, gray"
-        bgGradient={[
-          "linear(to-tr, gray.700, gray.200)",
-          "linear(to-b, gray.600, gray.900)",
-        ]}
+        bgGradient={["linear(to-b, gray.600, gray.900)"]}
         boxShadow="dark-lg"
         color="whiteAlpha.900"
         /* background="#1f1f33" */

@@ -75,7 +75,7 @@ function Navbar() {
           >
             <button className="btn">Skills</button>
           </Link>
-          <a href="./fw20_0372-Sourav-Paul-Resume.pdf" download>
+          <a href="./Sourav-Paul-Resume.pdf" download>
             <button className="btn" onClick={handleClick}>
               Resume
             </button>

@@ -40,15 +40,7 @@ function Profile() {
     },
   };
   return (
-    <Box
-      id="profile"
-      backgroundPosition="center"
-      bg="blackAlpha.900"
-      backgroundRepeat="repeat"
-      bgImage="https://i.imgur.com/Y3CLzxy.jpeg"
-      bgSize="100%"
-      pb="5"
-    >
+    <Box id="profile">
       <Grid
         w={{ base: "100%", md: "80%", lg: "80%" }}
         templateColumns={{ md: "1fr", lg: "1fr 1fr" }}
@@ -93,7 +85,7 @@ function Profile() {
             analytical skills. Team player with an eye for detail.{" "}
           </Text>
           <br />
-          <a href="./fw20_0372-Sourav-Paul-Resume.pdf" download>
+          <a href="./Sourav-Paul-Resume.pdf" download>
             <Flex
               w={"200px"}
               gap={2}
@@ -106,12 +98,7 @@ function Profile() {
               className="downloadbtn"
               _hover={{ bg: "#0a1a54", fontWeight: "bold", fontSize: "18px" }}
             >
-              <Img
-                src="https://i.ibb.co/MRdbgtQ/download.png"
-                w={10}
-                h={10}
-                mr={2}
-              />
+              <Img src="./download.png" w={10} h={10} mr={2} />
               Resume
             </Flex>
           </a>
@@ -127,10 +114,11 @@ function Profile() {
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <Image
-              src="https://i.imgur.com/6OjfgMC.png"
+              src="./Sourav.png"
               alt="Sourav Paul"
               w={{ lg: 400, md: 400, sm: 400, base: "100%" }}
               h={{ lg: 380 }}
+              p="2"
             />
           </Box>
         </Flex>

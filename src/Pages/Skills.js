@@ -4,102 +4,87 @@ import { motion } from "framer-motion";
 let skills = [
   {
     name: "HTML",
-    img: "https://cdn-icons-png.flaticon.com/512/1532/1532556.png",
+    img: "./HTML.png",
   },
   {
     name: "CSS",
-    img: "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png",
+    img: "./CSS.png",
   },
   {
     name: "JavaScript",
-    img: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
+    img: "./javascript.png",
   },
   {
     name: "React",
-    img: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
+    img: "./react.png",
   },
   {
     name: "NodeJs",
-    img: "https://nodejs.org/static/images/logo.svg",
+    img: "./node.js.png",
   },
   {
     name: "MongoDB",
-    img: "https://cdn.iconscout.com/icon/free/png-512/mongodb-5-1175140.png",
+    img: "./mongo.webp",
   },
   {
     name: "Express",
-    img: "https://i.imgur.com/jonx38t.png",
+    img: "./express.png",
   },
-  {
-    name: "REST API",
-    img: "https://miro.medium.com/max/300/1*1RDFnS8FgAOQFegtuynxWw.png",
-  },
-  {
-    name: "Next.js",
-    img: "https://i.imgur.com/8ZR96UA.png",
-  },
-  {
-    name: "TypeScript",
-    img: "https://i.imgur.com/T2ZnBHn.png",
-  },
+
   {
     name: "Redux",
-    img: "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
-  },
-  {
-    name: "Redux Thunk",
-    img: "https://i.imgur.com/U9wVSoJ.png",
+    img: "./redux.png",
   },
 ];
 
 let Tools = [
   {
     name: "Git",
-    img: "https://raveenakale475.github.io/static/media/git.95e92c065c8ce5f9147a.png",
+    img: "./Gits.png",
   },
   {
     name: "Github",
-    img: "https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png",
+    img: "./GitHub.png",
   },
   {
     name: "Storybook",
-    img: "https://i.imgur.com/YktgokE.png",
+    img: "./Story book.png",
   },
   {
     name: "Netlify",
-    img: "https://raveenakale475.github.io/static/media/netlify.ff9a6cf8b6be147ca675.png",
+    img: "./Netlify.png",
   },
   {
     name: "Chakra UI",
-    img: "https://camo.githubusercontent.com/eec63163a5209f78e8b0e3d6ab82eb981d03c4453a7a466f4fdc063da09f2a4d/68747470733a2f2f692e696d6775722e636f6d2f454d796b5a62332e706e67",
+    img: "./Chakra-UI.png",
   },
   {
-    name: "React Testing",
-    img: "https://testing-library.com/img/octopus-128x128.png",
+    name: "CodeSandbox",
+    img: "./CodeSandbox.png",
   },
   {
     name: "Vercel",
-    img: "https://raveenakale475.github.io/static/media/veercel.6d176e7fc85917a641d0.ico",
+    img: "./Vercel.ico",
   },
   {
-    name: "NPM",
-    img: "https://cdn.worldvectorlogo.com/logos/npm-square-red-1.svg",
+    name: "Replit",
+    img: "./Replit.png",
   },
   {
     name: "Postman",
-    img: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png",
+    img: "./Postman.webp",
   },
   {
     name: "Thunder Client",
-    img: "https://ph-files.imgix.net/3f458a19-f754-4e09-8aa5-351c3a45dc38.png?auto=format",
+    img: "./Thunder-Client.jpg.png",
   },
   {
     name: "VS Code",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png",
+    img: "./VS Code.png",
   },
   {
     name: "Cyclic",
-    img: "https://www.cyclic.sh/images/cyclic-logo.png",
+    img: "./Cyclic.png",
   },
 ];
 
@@ -235,3 +220,5 @@ function Skills() {
 }
 
 export default Skills;
+
+/* "https://cdn-icons-png.flaticon.com/512/1532/1532556.png" */

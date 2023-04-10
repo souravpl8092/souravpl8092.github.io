@@ -10,6 +10,9 @@ function Home() {
   return (
     <>
       <Profile />
+      <br />
+      <br />
+
       <About />
       <br />
       <br />
