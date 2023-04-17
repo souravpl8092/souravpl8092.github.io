@@ -1,10 +1,117 @@
 [
   {
     "name": "Lenskart",
-    "desc": "Lenskart is an Indian e-commerce company that sells eyeglasses, contact lenses, and sunglasses. The Company has a wide variety of products and offers services such as free home trial and virtual try-on. The company is also known for its lenskart.com eye check-up camps. The company has also has physical stores across India. ",
+    "desc": "Lenskart is a leading e-commerce company based in India that specializes in the sale of eyeglasses, contact lenses, and sunglasses. The Company has a wide variety of products and also offers services such as free home trial and virtual try-on. The company has also has physical stores across India. ",
     "img": "./Lenskart.png",
     "git": "https://github.com/souravpl8092/Lenskart_Clone",
     "deploy": "https://glassscart.vercel.app/",
+    "techStack": [
+      {
+        "name": "React",
+        "img": "./react.png"
+      },
+      {
+        "name": "CSS",
+        "img": "./CSS.png"
+      },
+      {
+        "name": "JavaScript",
+        "img": "./JS.png"
+      },
+      {
+        "name": "Redux",
+        "img": "./redux.png"
+      },
+      {
+        "name": "Chakra UI",
+        "img": "./Chakra-UI.png"
+      },
+      {
+        "name": "Node.js",
+        "img": "./node.png"
+      },
+      {
+        "name": "Express.js",
+        "img": "./express.png"
+      },
+      {
+        "name": "Mongodb",
+        "img": "./mongo.webp"
+      }
+    ]
+  },
+  {
+    "name": "Reliance Digital",
+    "desc": "Reliance Digital Retail Ltd. sells electronic products. The Company retails a wide variety of electronics including televisions, cameras, appliances, mobile phones, printers, and many more electronics. Reliance Digital retails electronics to customers throughout India.",
+    "img": "./Reliance.png",
+    "git": "https://github.com/RajParmar03/Reliance_digital_clone",
+    "deploy": "https://russdigital.netlify.app/",
+    "techStack": [
+      {
+        "name": "React",
+        "img": "./react.png"
+      },
+      {
+        "name": "JavaScript",
+        "img": "./JS.png"
+      },
+      {
+        "name": "CSS",
+        "img": "./CSS.png"
+      },
+      {
+        "name": "Redux",
+        "img": "./redux.png"
+      },
+      {
+        "name": "Redux-Thunk",
+        "img": "./Thunk.jpg"
+      },
+      {
+        "name": "Chakra UI",
+        "img": "./Chakra-UI.png"
+      }
+    ]
+  },
+  {
+    "name": "Licious",
+    "desc": "Licious is an Indian online food delivery company that specializes in delivering fresh, high-quality meat, seafood, and meat-based products. It sources products directly from farmers, fishermen, and partners with meat processing plants to ensure that the products are fresh and of high quality.",
+    "img": "./Licious.png",
+    "git": "https://github.com/souravpl8092/Licious_Clone",
+    "deploy": "https://d-licious.vercel.app/",
+    "techStack": [
+      {
+        "name": "React",
+        "img": "./react.png"
+      },
+      {
+        "name": "CSS",
+        "img": "./CSS.png"
+      },
+      {
+        "name": "JavaScript",
+        "img": "./JS.png"
+      },
+      {
+        "name": "Redux",
+        "img": "./redux.png"
+      },
+      {
+        "name": "Redux-Thunk",
+        "img": "./Thunk.jpg"
+      },
+      {
+        "name": "Chakra UI",
+        "img": "./Chakra-UI.png"
+      }
+    ]
+  },
+  {
+    "name": "Nordstrom",
+    "desc": "Nordstrom is a US based E-commerce company, it  is a leading fashion retailer offering compelling clothing, shoes and accessories for men, women and kids. Nordstrom is a one-stop shop for the whole family, and a fashion source for the modern world.",
+    "img": "./Nordstrome.png",
+    "git": "https://github.com/souravpl8092/Nordstrom",
+    "deploy": "https://nordstroom.vercel.app/",
     "techStack": [
       {
         "name": "React",
@@ -45,90 +152,27 @@
     ]
   },
   {
-    "name": "Reliance Digital",
-    "desc": "Reliance Digital Retail Ltd. sells electronic products. The Company retails a wide variety of electronics including televisions, cameras, appliances, mobile phones, printers, and many more electronics. Reliance Digital retails electronics to customers throughout India.",
-    "img": "./Reliance.png",
-    "git": "https://github.com/RajParmar03/Reliance_digital_clone",
-    "deploy": "https://reliancedigitalrrk.netlify.app/",
+    "name": "Weather App",
+    "desc": "A weather app provides users with current weather information, as well as forecasts for future weather conditions. These apps can be used on smartphones, tablets, laptop, and desktop. It's allow us to search for weather information for a specific location. It can provide detailed information like current temperature, humidity, wind speed and UV Index, and the forecast for the whole week.”.",
+    "img": "./Weather.png",
+    "git": "https://github.com/souravpl8092/WeatherApp",
+    "deploy": "https://weatheerapp.vercel.app/",
     "techStack": [
       {
         "name": "React",
         "img": "./react.png"
       },
       {
-        "name": "JavaScript",
-        "img": "./JS.png"
-      },
-      {
         "name": "CSS",
         "img": "./CSS.png"
+      },
+      {
+        "name": "JavaScript",
+        "img": "./JS.png"
       },
       {
         "name": "Redux",
         "img": "./redux.png"
-      },
-      {
-        "name": "Redux-Thunk",
-        "img": "./Thunk.jpg"
-      },
-      {
-        "name": "Chakra UI",
-        "img": "./Chakra-UI.png"
-      }
-    ]
-  },
-  {
-    "name": "Nordstrom",
-    "desc": "Nordstrom is a US based E-commerce company, it  is a leading fashion retailer offering compelling clothing, shoes and accessories for men, women and kids. Nordstrom is a one-stop shop for the whole family, and a fashion source for the modern world.",
-    "img": "./Nordstrome.png",
-    "git": "https://github.com/souravpl8092/Nordstorm",
-    "deploy": "https://jade-mandazi-3a9ec9.netlify.app/",
-    "techStack": [
-      {
-        "name": "React",
-        "img": "./react.png"
-      },
-      {
-        "name": "NodeJs",
-        "img": "./node.png"
-      },
-      {
-        "name": "JavaScript",
-        "img": "./JS.png"
-      },
-      {
-        "name": "CSS",
-        "img": "./CSS.png"
-      },
-      {
-        "name": "Chakra UI",
-        "img": "./Chakra-UI.png"
-      },
-      {
-        "name": "Heroku",
-        "img": "./heroku.png"
-      }
-    ]
-  },
-
-  {
-    "name": "Plum Goodness",
-    "desc": "Plum is a fresh line of 100% vegan beauty products that’s all about “being good” - to your skin, to your senses, to others, and to the environment. Plums are formulated with love to protect, repair, nourish - and delight, using some of the richest sources of natural nutrients, in sync with “good science”.",
-    "img": "./Plum.png",
-    "git": "https://github.com/souravpl8092/Plum",
-    "deploy": "https://mellifluous-crepe-f9498b.netlify.app/",
-    "techStack": [
-      {
-        "name": "HTML",
-        "img": "./HTML.png"
-      },
-      {
-        "name": "CSS",
-        "img": "./CSS.png"
-      },
-      {
-        "name": "JavaScript",
-        "img": "./JS.png"
       }
     ]
   }

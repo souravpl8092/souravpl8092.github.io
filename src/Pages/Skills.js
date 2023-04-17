@@ -20,7 +20,7 @@ let skills = [
   },
   {
     name: "NodeJs",
-    img: "./node.js.png",
+    img: "./node.png",
   },
   {
     name: "MongoDB",
@@ -30,10 +30,25 @@ let skills = [
     name: "Express",
     img: "./express.png",
   },
-
+  {
+    name: "Mongoose",
+    img: "./Mongoose.png",
+  },
   {
     name: "Redux",
     img: "./redux.png",
+  },
+  {
+    name: "Chakra UI",
+    img: "./Chakra-UI.png",
+  },
+  {
+    name: "REST API",
+    img: "./Rest Api.png",
+  },
+  {
+    name: "Bootstrap",
+    img: "./Bootstrap.png",
   },
 ];
 
@@ -55,8 +70,8 @@ let Tools = [
     img: "./Netlify.png",
   },
   {
-    name: "Chakra UI",
-    img: "./Chakra-UI.png",
+    name: "NPM",
+    img: "./npm.png",
   },
   {
     name: "CodeSandbox",
