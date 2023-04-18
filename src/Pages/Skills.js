@@ -1,6 +1,6 @@
 import { Box, Grid, Heading, Img, Text } from "@chakra-ui/react";
 import React from "react";
-import { motion } from "framer-motion";
+import "aos/dist/aos.css";
 let skills = [
   {
     name: "HTML",
@@ -104,20 +104,6 @@ let Tools = [
 ];
 
 function Skills() {
-  const slideUp = {
-    hidden: { opacity: 0, y: 100 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1,
-        ease: "easeOut",
-        when: "beforeChildren",
-        staggerChildren: 0.5,
-      },
-    },
-  };
-
   return (
     <Box>
       <Box mb="10">
@@ -145,12 +131,7 @@ function Skills() {
                   border="2px solid white"
                   bg="blackAlpha.600"
                   color="whiteAlpha.900"
-                  as={motion.div}
-                  variants={slideUp}
-                  initial="hidden"
-                  whileInView="visible"
-                  whileHover={{ scale: 1.2 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                  data-aos="zoom-out-down"
                 >
                   <Box
                     direction={{ base: "column", xl: "row" }}
@@ -198,12 +179,7 @@ function Skills() {
                   border="2px solid white"
                   bg="blackAlpha.600"
                   color="whiteAlpha.900"
-                  as={motion.div}
-                  variants={slideUp}
-                  initial="hidden"
-                  whileInView="visible"
-                  whileHover={{ scale: 1.2 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                  data-aos="zoom-out-down"
                 >
                   <Box
                     direction={{ base: "column", xl: "row" }}

@@ -11,22 +11,9 @@ import {
 import React from "react";
 import { LinkIcon } from "@chakra-ui/icons";
 import ProjectDb from "../projectDb.json";
-import { motion } from "framer-motion";
+import "aos/dist/aos.css";
 
 function Project() {
-  const slideUp = {
-    hidden: { opacity: 0, y: 100 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1,
-        ease: "easeOut",
-        when: "beforeChildren",
-        staggerChildren: 0.5,
-      },
-    },
-  };
   return (
     <Box mt={200} id="projects" marginBottom="-2%">
       <Heading textAlign={"center"} mt="-4%">
@@ -48,17 +35,12 @@ function Project() {
             bgGradient={["linear(to-b, gray.600, gray.900)"]}
             boxShadow="dark-lg"
             color="whiteAlpha.900"
-            /* background="#1f1f33" */
-            /* border="2px solid black" */
             borderRadius="2xl"
             fontSize="14px"
             /* _hover={{ transform: "scale(1.1)" }} */
-            as={motion.div}
-            variants={slideUp}
-            initial="hidden"
-            whileInView="visible"
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            data-aos="zoom-in-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
           >
             <Grid>
               <Img

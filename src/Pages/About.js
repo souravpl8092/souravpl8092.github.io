@@ -1,21 +1,13 @@
+import React, { useEffect } from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
-import React from "react";
-import { motion } from "framer-motion";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 function About() {
-  const slideUp = {
-    hidden: { opacity: 0, y: 100 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1,
-        ease: "easeOut",
-        when: "beforeChildren",
-        staggerChildren: 0.5,
-      },
-    },
-  };
+  useEffect(() => {
+    AOS.init({ offset: 300, duration: 1000 });
+  }, []);
+
   return (
     <Box id="about" m="100px 0  0" margin="auto" marginTop="4">
       <Heading textAlign={"center"} style={{ color: "white" }} marginTop="7%">
@@ -34,11 +26,7 @@ function About() {
         rounded="2xl"
         pt="20"
         pb={{ lg: "0.5", md: "1", base: "1" }}
-        as={motion.div}
-        variants={slideUp}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        data-aos="flip-left"
       >
         <Text
           fontSize={{ base: 16, md: 18, lg: 20 }}

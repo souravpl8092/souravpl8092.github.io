@@ -21,7 +21,7 @@ import {
 import { MdPhone, MdEmail, MdOutlineEmail } from "react-icons/md";
 import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
 import React from "react";
-import { motion } from "framer-motion";
+import "aos/dist/aos.css";
 
 function Contact() {
   const toast = useToast();
@@ -88,19 +88,6 @@ function Contact() {
     }
   };
 
-  const slideUp = {
-    hidden: { opacity: 0, y: 100 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1,
-        ease: "easeOut",
-        when: "beforeChildren",
-        staggerChildren: 0.5,
-      },
-    },
-  };
   return (
     <Box m="100px 0  0" id="contact">
       <Container
@@ -108,11 +95,9 @@ function Contact() {
         mt={0}
         centerContent
         overflow="hidden"
-        as={motion.div}
-        variants={slideUp}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        data-aos="zoom-in-up"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
       >
         <Flex>
           <Box
