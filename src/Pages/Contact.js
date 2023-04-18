@@ -99,9 +99,9 @@ function Contact() {
         mt={0}
         centerContent
         overflow="hidden"
-        data-aos="zoom-in-up"
-        data-aos-easing="linear"
-        data-aos-duration="2000"
+        data-aos="zoom-in"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
       >
         <Flex>
           <Box
