@@ -1,6 +1,8 @@
 import { Box, Grid, Heading, Img, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import "aos/dist/aos.css";
+import AOS from "aos";
+
 let skills = [
   {
     name: "HTML",
@@ -104,6 +106,9 @@ let Tools = [
 ];
 
 function Skills() {
+  useEffect(() => {
+    AOS.init({ offset: 300, duration: 1000 });
+  }, []);
   return (
     <Box>
       <Box mb="10">

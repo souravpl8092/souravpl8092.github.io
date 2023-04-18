@@ -1,10 +1,14 @@
 import { Box, Flex, Grid, Heading, Img } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import GitHubCalendar from "react-github-calendar";
 import { motion } from "framer-motion";
 import "aos/dist/aos.css";
+import AOS from "aos";
 
 function Github() {
+  useEffect(() => {
+    AOS.init({ offset: 300, duration: 1000 });
+  }, []);
   const slideUp = {
     hidden: { opacity: 0, y: 100 },
     visible: {
@@ -54,7 +58,7 @@ function Github() {
           color={"#20FF32"}
         />
         <br />
-        <Flex wrap="wrap" mb="2" data-aos="flip-right">
+        <Flex wrap="wrap" mb="2" data-aos="flip-right" data-aos-duration="1000">
           <Img
             className="git"
             src="https://github-readme-stats.vercel.app/api?username=souravpl8092&show_icons=true&theme=radical"
@@ -65,11 +69,7 @@ function Github() {
             alt="souravpl8092"
           />
         </Flex>
-        <Box
-          data-aos="flip-right"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
-        ></Box>
+        <Box></Box>
         <Box
           as={motion.div}
           variants={slideUp}

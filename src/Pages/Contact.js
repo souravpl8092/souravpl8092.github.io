@@ -17,11 +17,11 @@ import {
   Textarea,
   useToast,
 } from "@chakra-ui/react";
-
 import { MdPhone, MdEmail, MdOutlineEmail } from "react-icons/md";
 import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
-import React from "react";
+import React, { useEffect } from "react";
 import "aos/dist/aos.css";
+import AOS from "aos";
 
 function Contact() {
   const toast = useToast();
@@ -88,6 +88,10 @@ function Contact() {
     }
   };
 
+  useEffect(() => {
+    AOS.init({ offset: 300, duration: 1000 });
+  }, []);
+
   return (
     <Box m="100px 0  0" id="contact">
       <Container
@@ -96,8 +100,8 @@ function Contact() {
         centerContent
         overflow="hidden"
         data-aos="zoom-in-up"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
+        data-aos-easing="linear"
+        data-aos-duration="2000"
       >
         <Flex>
           <Box

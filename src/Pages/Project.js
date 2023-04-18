@@ -8,12 +8,16 @@ import {
   Link,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { LinkIcon } from "@chakra-ui/icons";
 import ProjectDb from "../projectDb.json";
 import "aos/dist/aos.css";
+import AOS from "aos";
 
 function Project() {
+  useEffect(() => {
+    AOS.init({ offset: 300, duration: 1000 });
+  }, []);
   return (
     <Box mt={200} id="projects" marginBottom="-2%">
       <Heading textAlign={"center"} mt="-4%">
