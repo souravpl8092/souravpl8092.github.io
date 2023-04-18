@@ -58,15 +58,17 @@ function Github() {
           color={"#20FF32"}
         />
         <br />
-        <Flex wrap="wrap" mb="2" data-aos="flip-right" data-aos-duration="1000">
+        <Flex wrap="wrap" mb="2">
           <Img
             className="git"
             src="https://github-readme-stats.vercel.app/api?username=souravpl8092&show_icons=true&theme=radical"
+            data-aos="fade-up-right"
           />
           <Img
             className="git"
             src="https://github-readme-streak-stats.herokuapp.com/?user=souravpl8092&theme=radical"
             alt="souravpl8092"
+            data-aos="fade-up-left"
           />
         </Flex>
         <Box></Box>

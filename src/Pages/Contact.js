@@ -20,6 +20,7 @@ import {
 import { MdPhone, MdEmail, MdOutlineEmail } from "react-icons/md";
 import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
 import React, { useEffect } from "react";
+import { motion } from "framer-motion";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
@@ -88,6 +89,20 @@ function Contact() {
     }
   };
 
+  const slideUp = {
+    hidden: { opacity: 0, y: 100 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+        when: "beforeChildren",
+        staggerChildren: 0.5,
+      },
+    },
+  };
+
   useEffect(() => {
     AOS.init({ offset: 300, duration: 1000 });
   }, []);
@@ -99,9 +114,11 @@ function Contact() {
         mt={0}
         centerContent
         overflow="hidden"
-        data-aos="zoom-in"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
+        as={motion.div}
+        variants={slideUp}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ type: "spring", stiffness: 400, damping: 10 }}
       >
         <Flex>
           <Box
