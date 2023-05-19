@@ -58,17 +58,23 @@ function Github() {
           color={"#20FF32"}
         />
         <br />
-        <Flex wrap="wrap" mb="2">
+        <Flex
+          wrap="wrap"
+          mb="2"
+          as={motion.div}
+          variants={slideUp}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        >
           <Img
             className="git"
             src="https://github-readme-stats.vercel.app/api?username=souravpl8092&show_icons=true&theme=radical"
-            data-aos="fade-up-right"
           />
           <Img
             className="git"
             src="https://github-readme-streak-stats.herokuapp.com/?user=souravpl8092&theme=radical"
             alt="souravpl8092"
-            data-aos="fade-up-left"
           />
         </Flex>
         <Box></Box>
@@ -81,7 +87,7 @@ function Github() {
         >
           <Img
             className="git"
-            src="https://github-profile-trophy.vercel.app/?username=souravpl8092&theme=radical"
+            src="https://github-profile-trophy.vercel.app/?username=souravpl8092&column=7&theme=radical"
             alt="souravpl8092"
             mb="2"
           />

@@ -11,7 +11,7 @@ function App() {
       backgroundPosition="center"
       bg="blackAlpha.900"
       backgroundRepeat="no-repeat"
-      bgImage="url('/image.jpg')"
+      bgImage="url('/background image.jpg')"
       bgSize="cover"
       bgAttachment="fixed"
     >

@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 function Navbar() {
   const handleClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1BtlCp0aiUlaiP5yReW94bd1zuMLCXAFW/view?usp=sharing",
+      "https://drive.google.com/file/d/1oJRimqmYFWLFSMBbWeLdnjvbHLHIkSub/view?usp=sharing",
       "_blank"
     );
   };
