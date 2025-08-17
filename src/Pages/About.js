@@ -19,7 +19,7 @@ function About() {
         m="40px auto 0"
         lineHeight={{ base: "7", md: "10" }}
         bg="blackAlpha.500, gray"
-        bgGradient={["linear(to-b, gray.600, gray.900)"]}
+        bgGradient={["linear(to-b, gray.600, gray.800)"]}
         boxShadow="dark-lg"
         color="whiteAlpha.900"
         p={{ lg: "20", base: "4" }}
@@ -29,20 +29,24 @@ function About() {
         data-aos="flip-left"
       >
         <Text
-          fontSize={{ base: 16, md: 18, lg: 20 }}
+          fontSize={{ base: 14, md: 16, lg: 18 }}
           textAlign={{ lg: "justify", md: "justify", base: "left" }}
           marginBottom="10%"
         >
-          My name's Sourav Paul. I'm a full-stack web developer based in Masai
-          School, Bengaluru. I love exploring new technologies in the field of
-          Web Development and always try to adapt to them. I believe in the
-          concept of continuous learning by regularly upgrading my skills and
-          enhancing my knowledge. I have learned MERN stack, data structures,
-          algorithms, and soft skills at Masai School. And besides coding, I
-          love traveling and exploring new places. As a developer, my hunger for
-          learning has drastically increased. And I want to centralize my skills
-          and learning for the enhancement of an organization and more of it, to
-          enhance my career.
+          My name is Sourav Paul, and I’m a MERN Stack Developer from
+          Jamshedpur, Jharkhand, with 2 years of experience in building scalable
+          web applications, integrating APIs, and developing real-time
+          solutions. I have worked on projects like a Bulk Messaging Platform,
+          Interactive Client Dashboards, Chatbots, and the Heyhomie Website &
+          App, helping small businesses streamline their operations. I
+          specialize in React.js, Next.js, Node.js, Express.js, MongoDB, Redux,
+          and API Orchestration, and I’m passionate about creating
+          high-performance, user-friendly solutions that drive business growth.
+          I strongly believe in continuous learning, always exploring emerging
+          web technologies and upgrading my skills to stay ahead. Beyond coding,
+          I love traveling, exploring new places. As a developer, my curiosity
+          and hunger for learning keep pushing me to centralize my skills for
+          the growth of both the organization I work with and my own career.
         </Text>
       </Box>
     </Box>

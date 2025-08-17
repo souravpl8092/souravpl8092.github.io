@@ -122,7 +122,7 @@ function Contact() {
       >
         <Flex>
           <Box
-            bgGradient={["linear(to-b, gray.600, gray.900)"]}
+            bgGradient={["linear(to-b, gray.600, gray.800)"]}
             boxShadow="dark-lg"
             color="white"
             borderRadius="2xl"

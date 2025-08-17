@@ -36,7 +36,7 @@ function Project() {
             p="5"
             m="80px auto"
             fontWeight="semibold"
-            bgGradient={["linear(to-b, gray.600, gray.900)"]}
+            bgGradient={["linear(to-b, gray.600, gray.800)"]}
             boxShadow="dark-lg"
             color="whiteAlpha.900"
             borderRadius="2xl"

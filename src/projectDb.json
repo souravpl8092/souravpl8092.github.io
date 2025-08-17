@@ -5,7 +5,7 @@
     "img": "./Lenskart.png",
     "git": "https://github.com/souravpl8092/Lenskart_Clone",
     "animation": "fade-right",
-    "deploy": "https://glassscart.vercel.app/",
+    "deploy": "https://glasscart-three.vercel.app/",
     "techStack": [
       {
         "name": "React",

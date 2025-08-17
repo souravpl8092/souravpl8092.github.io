@@ -1,5 +1,6 @@
 import React from "react";
 import About from "../Pages/About";
+import Experience from "../Pages/Experience";
 import Project from "./Project";
 import Github from "../Components/Github";
 import Skills from "./Skills";
@@ -14,6 +15,12 @@ function Home() {
       <br />
 
       <About />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Experience />
       <br />
       <br />
       <br />

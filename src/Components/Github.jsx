@@ -87,7 +87,7 @@ function Github() {
         >
           <Img
             className="git"
-            src="https://github-profile-trophy.vercel.app/?username=souravpl8092&column=7&theme=radical"
+            src="https://github-profile-trophy.vercel.app/?username=souravpl8092&column=8&theme=radical"
             alt="souravpl8092"
             mb="2"
           />
